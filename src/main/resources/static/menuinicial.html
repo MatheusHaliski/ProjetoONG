@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Inicial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    .card {
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="card text-center">
+        <div class="card-header bg-primary text-white">
+          <h3>Bem-vindo, <span id="username">Usuário</span>!</h3>
+        </div>
+        <div class="card-body">
+          <p class="lead mb-4">Escolha uma das opções abaixo para continuar:</p>
+          <div class="d-grid gap-3">
+            <a href="/realizar-doacao.html" class="btn btn-primary">Realizar Doação</a>
+            <button id="btnVisualizarDoacoes" class="btn btn-success">Visualizar Minhas Doações</button>
+            <a href="/form-alterar-perfil.html" class="btn btn-warning">Alterar Dados de Perfil</a>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="/login.html" class="btn btn-danger w-100">Sair</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JS do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  fetch("/auth/usuario-logado")
+          .then(response => response.text())
+          .then(username => {
+            document.getElementById("username").innerText = username;
+          });
+
+  document.getElementById("btnVisualizarDoacoes").addEventListener("click", function () {
+    window.location.href = "/visualizar-minhas-doacoes";
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    fetch("/auth/usuario-logado")
+            .then(response => response.text())
+            .then(username => {
+              document.getElementById("username").innerText = username;
+            });
+  });
+
+</script>
+
+</body>
+</html>
