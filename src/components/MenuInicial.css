@@ -1,0 +1,69 @@
+/* Fundo com imagem */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://images.unsplash.com/photo-1581090700227-1e8b0aee46c5') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Card com efeito de vidro (glassmorphism) */
+.card {
+    background: rgba(255, 255, 255, 0.1); /* Transparente */
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Cabeçalho do card */
+.card-header {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Corpo do card */
+.card-body {
+    padding: 30px;
+}
+
+/* Botões com estilo unificado */
+.card-body .btn,
+.card-footer .btn {
+    padding: 14px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: #1e90ff;
+    border: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efeito hover */
+.card-body .btn:hover,
+.card-footer .btn:hover {
+    background-color: #1c86ee;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+}
+
+/* Footer com alinhamento total */
+.card-footer {
+    padding: 20px;
+    background: transparent;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Texto de boas-vindas */
+.card h3 span {
+    font-weight: 300;
+    font-style: italic;
+    color: #e0e0e0;
+}
