@@ -1,0 +1,47 @@
+/* RegistrarUsuario.css */
+.register-container {
+    width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.register-container h2 {
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.register-container input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.register-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-container button:hover {
+    background-color: #218838;
+}
+
+.register-container p {
+    margin-top: 20px;
+    color: #d63333;
+    font-weight: bold;
+}
