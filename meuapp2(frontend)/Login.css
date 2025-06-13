@@ -23,6 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px; /* Espaço entre os elementos dentro do container */
+    transition: padding 0.5s ease, max-width 0.5s ease, margin 0.5s ease; /* Transições adicionadas */
 }
 
 /* Título */
@@ -30,6 +31,7 @@ body {
     margin-bottom: 16px;
     font-size: 28px;
     color: #333;
+    transition: font-size 0.5s ease; /* Transição para font-size */
 }
 
 /* Inputs */
@@ -39,7 +41,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s, font-size 0.5s ease; /* Transição no font-size */
     background-color: #f9f9f9;
 }
 
@@ -59,7 +61,7 @@ body {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, font-size 0.5s ease; /* Transição no font-size */
 }
 
 .login-container button:hover {
@@ -73,6 +75,7 @@ body {
     color: #007bff;
     display: inline-block;
     margin-top: 8px;
+    transition: font-size 0.5s ease; /* Transição no font-size */
 }
 
 .login-container a:hover {
@@ -136,9 +139,22 @@ footer p {
     .login-container {
         margin: 20px;
         padding: 20px;
+        max-width: 100%; /* Garantir que ocupe mais a tela pequena */
     }
 
     .login-container h2 {
         font-size: 24px;
+    }
+
+    .login-container input {
+        font-size: 14px;
+    }
+
+    .login-container button {
+        font-size: 14px;
+    }
+
+    .login-container a {
+        font-size: 12px;
     }
 }
