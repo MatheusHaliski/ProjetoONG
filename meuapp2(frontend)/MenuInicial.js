@@ -98,22 +98,22 @@ function MenuInicial() {
                     />
                     <CardMenu
                         image="assets/a.jpeg"
-                        text="Visualizar Minhas Doações - Clique para visualizar suas doações"
+                        text="Visualizar Minhas Doações - Clique para visualizar suas doações!"
                         onClick={() => navigate('/visualizar-minhas-doacoes')}
                     />
                     <CardMenu
                         image="assets/a2.png"
-                        text="Visualizar Todas as doações - Clique para visualizar doações de todos os usuários"
+                        text="Visualizar Todas as doações - Clique para visualizar doações de todos os usuários!"
                         onClick={() => navigate('/visualizar-doacoes-recebidas')}
                     />
                     <CardMenu
                         image="assets/imgg.png"
-                        text="Visualizar doadores(pessoas) cadastradas - Clique para visualizar doadores cadastrados"
+                        text="Visualizar doadores(pessoas) cadastradas - Clique para visualizar doadores cadastrados!"
                         onClick={() => navigate('/visualizar-doadores-lista')}
                     />
                     <CardMenu
                         image="assets/altp.png"
-                        text="Alterar Dados de Perfil - Clique aqui para alterar seus dados de perfil"
+                        text="Alterar Dados de Perfil - Clique aqui para alterar seus dados de perfil!"
                         onClick={() => navigate('/form-alterar-perfil')}
                     />
                 </div>
