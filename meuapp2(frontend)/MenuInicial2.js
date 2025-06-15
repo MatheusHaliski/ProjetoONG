@@ -126,7 +126,7 @@ function MenuInicial() {
         </>
     );
 }
-
+// Componente reutilizável para criar cada card do menu
 function CardMenu({ image, text, onClick }) {
     return (
         <div className="card card-menu" onClick={onClick}>
