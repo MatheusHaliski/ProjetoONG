@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
-
+// Função principal do componente
 function EsqueciSenha() {
     const [email, setEmail] = useState("");
     const [mensagem, setMensagem] = useState("");
@@ -54,7 +54,7 @@ function EsqueciSenha() {
             });
         }
     };
-
+ // Renderização do formulário
     return (
         <div style={{ textAlign: "center", padding: "50px" }}>
             <h2>Recuperar Senha</h2>
