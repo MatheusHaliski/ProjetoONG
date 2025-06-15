@@ -1,3 +1,4 @@
+// Importações de bibliotecas e componentes
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
@@ -8,6 +9,8 @@ import Footer from "./Footer";
 import img55 from '../assets/bg-register.jpg';
 import EsqueciSenha from "./EsqueciSenha";
 import { FaBookOpen, FaHeartbeat, FaLeaf, FaDollarSign } from "react-icons/fa";
+
+// Componente principal Login
 function Login() {
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
@@ -19,6 +22,7 @@ function Login() {
         { name: "Meio Ambiente", icon: <FaLeaf size={28} /> },
         { name: "Economia", icon: <FaDollarSign size={28} /> },
     ];
+     // Função de validação de email
     const validarEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     const validarSenha = (senha) => /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(senha);
 
@@ -37,7 +41,7 @@ function Login() {
             exibirErro("Formato de e-mail inválido.");
             return;
         }
-
+// Cria o corpo da requisição
         const formData = new URLSearchParams();
         formData.append("email", email);
         formData.append("password", senha);
