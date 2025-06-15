@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
-
+// Define o componente funcional ListaDoadoresCadastrados
 const ListaDoadoresCadastrados = () => {
     const [pessoas, setPessoas] = useState([]);
     const navigate = useNavigate();
