@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './MenuInicial.css';
+// Importa os componentes Header e Footer (provavelmente definidos em outros arquivos)
 import Header from "./Header";
 import Footer from "./Footer";
 // Importa o CSS do Bootstrap e o CSS específico deste componente
