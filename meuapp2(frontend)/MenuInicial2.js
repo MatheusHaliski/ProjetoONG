@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './MenuInicial.css';
 import Header from "./Header";
 import Footer from "./Footer";
-
+// Importa o CSS do Bootstrap e o CSS específico deste componente
 function MenuInicial() {
     const [emailUsuario, setEmailUsuario] = useState(null);
     const navigate = useNavigate();
