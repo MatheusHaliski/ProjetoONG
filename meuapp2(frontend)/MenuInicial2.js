@@ -1,3 +1,4 @@
+// Importa os hooks do React e a ferramenta de navegação entre páginas (react-router-dom)
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
