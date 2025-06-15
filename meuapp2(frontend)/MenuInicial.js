@@ -1,3 +1,4 @@
+// Importação dos hooks do React, ferramenta de navegação e estilos
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,7 +11,7 @@ function MenuInicial() {
     const navigate = useNavigate();
     const [isLoading, setIsLoading] = useState(true);
     const [imagemPerfil, setImagemPerfil] = useState(null);
-
+// useEffect é executado ao carregar o componente
     useEffect(() => {
         const email = sessionStorage.getItem("emailUsuario");
         if (!email) {
@@ -34,7 +35,7 @@ function MenuInicial() {
             setIsLoading(false);
         }
     }, [navigate]);
-
+ // Enquanto estiver carregando, não renderiza nada (poderia ter um loading spinner aqui)
     if (isLoading) {
         return null;
     }
