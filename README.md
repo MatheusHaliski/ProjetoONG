@@ -1,5 +1,5 @@
 # ProjetoONG
-Repositório do projeto de uma ONG de doação de equipamentos eletrônicos em Curitiba
+Este projeto simula uma plataforma para gerenciar doações de uma ONG de Eletrônicos, com funcionalidades de cadastro de doadores, gerenciamento de produtos e doações, login e visualização de dados no painel administrativo.
 
 Link para o Trello: https://trello.com/b/gz3jZxzh/experiencia-criativa-trabalho
 
