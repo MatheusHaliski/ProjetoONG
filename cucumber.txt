@@ -1,0 +1,29 @@
+ONG para Doação de Equipamentos Eletrônicos
+User Stories
+Participantes: Bryan Strey, Victor Luis, Matheus Matheus Braschi Haliski, Stephanny Almeida
+
+
+User Stories – Doador
+1.	Como doador, desejo me cadastrar na plataforma com meu nome, email e telefone, para poder registrar minhas doações e acompanhar o andamento delas.
+2.	Como doador, desejo realizar o login com segurança, para acessar meu perfil e histórico de doações.
+3.	Como doador, quero preencher um formulário com as informações do equipamento (tipo, marca, modelo, estado de conservação), para que a ONG possa avaliar a viabilidade da doação.
+4.	Como doador, desejo acompanhar o status da minha doação (recebido, em avaliação, redistribuído), para saber se ela foi útil e a quem beneficiou.
+
+User Stories – Beneficiário
+5.	Como beneficiário, desejo me cadastrar na plataforma informando meus dados pessoais e justificativa da solicitação, para ser considerado na redistribuição dos equipamentos.
+6.	Como beneficiário, quero visualizar a lista de equipamentos disponíveis para doação, para que eu possa manifestar interesse nos que atendem minhas necessidades.
+7.	Como beneficiário, desejo receber notificações quando um equipamento solicitado for disponibilizado para mim, para que eu saiba quando e onde retirá-lo.
+8.	Como beneficiário, desejo registrar minha confirmação de recebimento do equipamento, para concluir o processo de redistribuição e liberar o item do estoque da ONG.
+
+User Stories – Administrador da ONG
+9.	Como administrador, desejo ter um painel de controle para visualizar todas as doações recebidas, seus estados e dados dos doadores, para acompanhar o fluxo da ONG.
+10.	Como administrador, quero poder aprovar ou recusar o cadastro de beneficiários com base em critérios de vulnerabilidade, para garantir que os equipamentos cheguem a quem mais precisa.
+11.	Como administrador, desejo gerenciar o estoque dos equipamentos (entrada, avaliação, saída), para manter o controle sobre os itens disponíveis.
+12.	Como administrador, desejo registrar parcerias com empresas de tecnologia e manutenção, para otimizar os processos de avaliação e reparo dos dispositivos doados.
+
+User Stories – Técnico de Manutenção
+13.	Como técnico, desejo acessar uma lista de equipamentos pendentes de avaliação técnica, para saber quais precisam ser testados e reparados.
+14.	Como técnico, quero registrar o resultado dos testes de funcionamento e os reparos realizados em cada item, para documentar a condição final do equipamento.
+15.	Como técnico, desejo marcar um equipamento como “pronto para redistribuição” após a avaliação, para que ele possa ser ofertado a um beneficiário.
+16.	Como técnico, quero visualizar o histórico técnico de cada equipamento, para verificar recorrências de defeitos ou limitações antes da redistribuição.
+
