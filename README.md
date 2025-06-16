@@ -18,14 +18,14 @@ Link para o Trello: https://trello.com/b/gz3jZxzh/experiencia-criativa-trabalho
 - H2 Database (arquivo `meu-banco.mv.db`)
 - Spring Web
 
-- ### Pré-requisitos
+### Pré-requisitos
 
 - Node.js (versão 18+)
 - Java JDK 17 ou superior
 - Git
 - Gradle (ou use o wrapper `./gradlew`)
 
-- Frontend - React
+### Frontend - React
 - Acesse o diretório do frontend:
 - cd meuapp2\(frontend\)
   
