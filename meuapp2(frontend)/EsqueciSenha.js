@@ -84,4 +84,5 @@ function EsqueciSenha() {
     );
 }
 
+// Exporta o componente para ser usado em outras partes da aplicação
 export default EsqueciSenha;
