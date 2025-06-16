@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
-
+// Define o componente funcional ListaDoadoresCadastrados
 const ListaDoadoresCadastrados = () => {
     const [pessoas, setPessoas] = useState([]);
     const navigate = useNavigate();
@@ -17,6 +17,7 @@ const ListaDoadoresCadastrados = () => {
         } else {
             setEmailUsuario(email);
         }
+          // Faz uma requisição GET para buscar a lista de doadores cadastrados
         fetch(`http://localhost:8080/visualizar-doadores-lista`)
             .then(response => response.json())
             .then(data => {
@@ -68,5 +69,5 @@ const ListaDoadoresCadastrados = () => {
         </div>
     );
 };
-
+// Exporta o componente para ser utilizado em outros lugares da aplicação
 export default ListaDoadoresCadastrados;

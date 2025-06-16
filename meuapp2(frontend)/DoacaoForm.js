@@ -1,7 +1,8 @@
+// Importa as bibliotecas React e hooks necessários
 import React, { useEffect, useState } from 'react';
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
-
+// Componente funcional principal
 const DoacaoForm = () => {
     const [produtos, setProdutos] = useState([]);
     const [produtoSelecionado, setProdutoSelecionado] = useState(null);
@@ -42,7 +43,7 @@ const DoacaoForm = () => {
             });
             return;
         }
-
+         // Cria um objeto FormData para enviar os dados para a API
         const formData = new FormData();
         formData.append('descricao', produtoSelecionado.nome);
         formData.append('quantidade', quantidade);
